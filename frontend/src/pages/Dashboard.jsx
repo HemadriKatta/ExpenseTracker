@@ -3,7 +3,7 @@ import ExpenseForm from "../components/ExpenseForm";
 import ExpenseTable from "../components/ExpenseTable";
 import CategoryPieChart from "../components/Charts/CategoryPieChart";
 import MonthlyBarChart from "../components/Charts/MonthlyBarChart";
-import { fetchExpenses } from "../services/api";
+import { fetchExpenses } from "../sevices/api";
 
 const Dashboard = () => {
     const [expenses, setExpenses] = useState([]);
@@ -19,7 +19,7 @@ const Dashboard = () => {
 
     return (
         <div className="container mt-4">
-            <h2>SmartExpense Dashboard</h2>
+            <h2>Smart Expense Dashboard</h2>
             <ExpenseForm onAdd={loadExpenses} />
             <ExpenseTable expenses={expenses} onUpdate={loadExpenses} />
             <div className="row mt-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import { deleteExpense } from "../services/api";
+import { deleteExpense } from "../sevices/api";
 
 const ExpenseTable = ({ expenses, onUpdate }) => {
     const handleDelete = async (id) => {
